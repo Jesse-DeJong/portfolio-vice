@@ -43,7 +43,7 @@ const Home = () => {
                 </>
                 : count == 1 ?
                 <>
-                    <Projects />
+                    <Projects setCount={setCount}/>
                 </>
                 : <p>Whoops! Something went wrong. {console.log(count)}</p>
                 }
