@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100&family=Megrim&display=swap");
+/* Variables */
+/* Screensize */
+/* Components */
+/* Global */
+* {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+}
+
+body {
+  background-color: black;
+}
+
+/* Landing Page */
+.landing {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.landing__heading {
+  font-family: "Megrim", cursive;
+}
+.landing__script {
+  font-family: "Big Shoulders Inline Display", cursive;
+}
+/* About Page */
+.about {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about__heading {
+  font-family: "Megrim", cursive;
+}
+.about__subheading {
+  font-family: "Big Shoulders Inline Display", cursive;
+}
+.about__script {
+  padding: 10px 10%;
+}
+@media only screen and (min-width: 901px) {
+  .about__skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+#bio {
+  cursor: pointer;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects__div {
+  display: flex;
+}
+.projects__heading {
+  font-size: 50px;
+  font-family: "Megrim", cursive;
+  margin: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .projects__div {
+    flex-direction: column;
+  }
+}
+/* Project - Component */
+.project {
+  background-color: darkslategray;
+}
+.project__cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.project__title {
+  justify-content: center;
+  font-family: "Megrim", cursive;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+.project__img {
+  object-fit: cover;
+}
+.project__button {
+  font-family: "Megrim", cursive;
+  font-size: 30px;
+  padding: 0px 30px;
+  background-color: red;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 500px) {
+  .project__div {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .project {
+    width: 300px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  .project__img {
+    width: 300px;
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+
+/* ProjectFOCUS - Component */
+.projectFocus {
+  background-color: darkslategray;
+}
+.projectFocus__cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.projectFocus__title {
+  justify-content: center;
+  font-family: "Megrim", cursive;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+.projectFocus__img {
+  object-fit: cover;
+}
+.projectFocus__button {
+  font-family: "Megrim", cursive;
+  font-size: 30px;
+  padding: 0px 30px;
+  background-color: red;
+  border-radius: 5px;
+}
+.projectFocus__tools {
+  display: flex;
+}
+@media only screen and (max-width: 500px) {
+  .projectFocus__div {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .projectFocus {
+    width: 900px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  .projectFocus__img {
+    width: 900px;
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+
+.badge {
+  background-color: gold;
+  border-radius: 5px;
+  color: black;
+  padding: 3px;
+  margin: 1px;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills__div {
+  display: flex;
+}
+.skills__heading {
+  font-size: 50px;
+  font-family: "Megrim", cursive;
+  margin: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .skills__div {
+    flex-direction: column;
+  }
+}
+/* Skill - Component */
+.skill__cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.skill__title {
+  font-size: 30px;
+  padding-bottom: 5px;
+  justify-content: center;
+  font-family: "Megrim", cursive;
+}
+.skill__icon {
+  display: flex;
+  justify-content: center;
+  font-size: 75px;
+}
+.skill__img {
+  object-fit: cover;
+}
+.skill__script {
+  padding: 5px;
+  font-size: 20px;
+}
+@media only screen and (min-width: 901px) {
+  .skill {
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .skill__img {
+    border-radius: 5px 5px 0px 0px;
+    width: 300px;
+  }
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav__link {
+  padding: 10px 10px;
+  /* Y X */
+}

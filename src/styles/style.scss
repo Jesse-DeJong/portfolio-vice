@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100&family=Megrim&display=swap');
+
+/* Variables */
+$heading: 'Megrim', cursive;
+$script: 'Big Shoulders Inline Display', cursive;
+// $para: 
+
+/* Screensize */
+$mobile: 500px;
+$tablet: 900px;
+$desktop: 901px;
+
+/* Components */
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Global */
+* {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+body {
+    background-color: black;
+}
+
+//==============================================================================//
+/* Landing Page */
+
+.landing {
+    font-size: 50px;
+    @include flexCenter;
+    flex-direction: column;
+    
+    &__heading {
+        font-family: $heading;
+    }
+    
+    &__script {
+        font-family: $script;
+    }
+
+    @media only screen and (min-width: $desktop) {
+ 
+    }
+}
+
+//==============================================================================//
+/* About Page */
+
+.about {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+
+    &__heading {
+        font-family: $heading;
+    }
+    &__subheading {
+        font-family: $script;
+    }
+
+    &__script {
+        // font-family: $script;
+        padding: 10px 10%;
+    }
+    
+
+    @media only screen and (min-width: $desktop) {
+        &__skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+#bio {
+    cursor: pointer;
+}
+
+//==============================================================================//
+/* Projects */
+$projectWidth: 300px;
+
+.projects {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    
+    &__div {
+        display: flex;
+    }
+
+    &__heading {
+        font-size: 50px;
+        font-family: $heading;
+        margin: 10px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+    
+    &__div {
+        flex-direction: column;
+    }
+        
+    }
+
+    @media only screen and (min-width: $desktop) {
+
+    }
+}
+
+/* Project - Component */
+.project {
+    // border: 1px solid red;
+    background-color: darkslategray;
+
+    &__cardBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // border: 1px solid aqua;
+        padding: 5px;
+    }
+
+    &__title {
+        justify-content: center;
+        font-family: $heading;
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    &__img {
+        object-fit: cover;     
+    }
+
+    &__button {
+        font-family: $heading;
+        font-size: 30px;
+        padding: 0px 30px;
+        background-color: red;
+        border-radius: 5px;
+    }
+    
+    @media only screen and (max-width: $mobile) {
+
+        &__div {
+            flex-direction: column;
+        }
+        
+    }
+
+    @media only screen and (min-width: $desktop) {
+        width: $projectWidth;
+        border-radius: 5px;
+        margin: 5px;
+
+        &__img {
+        width: $projectWidth;
+        border-radius: 5px 5px 0px 0px;
+        }
+    }
+
+}
+
+/* ProjectFOCUS - Component */
+.projectFocus {
+    // border: 1px solid red;
+    background-color: darkslategray;
+
+    &__cardBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // border: 1px solid aqua;
+        padding: 5px;
+    }
+
+    &__title {
+        justify-content: center;
+        font-family: $heading;
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    &__img {
+        object-fit: cover;     
+    }
+
+    &__button {
+        font-family: $heading;
+        font-size: 30px;
+        padding: 0px 30px;
+        background-color: red;
+        border-radius: 5px;
+    }
+    
+    &__tools {
+        display: flex;
+    }
+
+    @media only screen and (max-width: $mobile) {
+
+        &__div {
+            flex-direction: column;
+        }
+        
+    }
+
+    @media only screen and (min-width: $desktop) {
+        width: $projectWidth * 3;
+        border-radius: 5px;
+        margin: 5px;
+
+        &__img {
+        width: $projectWidth * 3;
+        border-radius: 5px 5px 0px 0px;
+        }
+    }
+
+}
+
+.badge {
+    background-color: gold;
+    border-radius: 5px;
+    color: black;
+    padding: 3px;
+    margin: 1px;
+}
+
+//==============================================================================//
+/* Skills */
+$skillWidth: 300px;
+
+.skills {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+
+    &__div {
+        display: flex;
+    }
+
+    &__heading {
+        font-size: 50px;
+        font-family: $heading;
+        margin: 10px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+
+        &__div {
+            flex-direction: column;
+        }
+        
+    }
+
+    @media only screen and (min-width: $desktop) {
+        
+    }
+
+}
+
+/* Skill - Component */
+.skill {
+    // border: 1px solid red;
+    // background-color: darkslategray;
+
+    &__cardBody {
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        // border: 1px solid aqua;
+        padding: 5px;
+    }
+
+    &__title {
+        font-size: 30px;
+        padding-bottom: 5px;
+        justify-content: center;
+        font-family: $heading;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        font-size: 75px;
+    }
+
+    &__img {
+        object-fit: cover;
+    }
+
+    &__script {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+
+    }
+
+    @media only screen and (min-width: $desktop) {
+        width: $skillWidth;
+        margin: 5px;
+        border-radius: 5px;
+
+        &__img {
+            border-radius: 5px 5px 0px 0px;
+            width: $skillWidth;
+        }
+    }
+}
+
+//==============================================================================//
+/* Nav */
+
+.nav {
+    display: flex;
+    justify-content: center;
+
+    &__link {
+        padding: 10px 10px; /* Y X */
+    }
+
+    @media only screen and (min-width: $desktop) {
+
+    }
+}
