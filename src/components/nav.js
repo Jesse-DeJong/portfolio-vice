@@ -1,19 +1,15 @@
 import '../styles/reset.css';
 import '../styles/style.css';
 
-const Nav = () => {
+const Nav = ({
+    setCount
+}) => {
 
-    // less 75 pixels to compensate for the navbar
-    // const windowWidth = document.documentElement.clientWidth;
-    // const navWidth = windowWidth / 4;
-    // const windowHeight = document.documentElement.clientHeight;
+    const handleClick = (e) => {
+        setCount(e.target.id)
+    };
 
     const styles = {
-        // body: {
-        //     width: navWidth,
-        //     height: windowHeight,
-        //     border: "1px solid white"
-        // },
         list: {
             display: "flex",
             flexDirection: "Column",
@@ -28,9 +24,9 @@ const Nav = () => {
         <section style={styles.body}>
             <h1>Jesse De Jong</h1>
             <ul style={styles.list}>
-                <li style={styles.listItem}>About Me</li>
-                <li style={styles.listItem}>Projects</li>
-                <li style={styles.listItem}>Contact</li>
+                <li style={styles.listItem} id="0" onClick={handleClick}>About Me</li>
+                <li style={styles.listItem} id="1" onClick={handleClick}>Projects</li>
+                <li style={styles.listItem} id="2" onClick={handleClick}>Contact</li>
             </ul>
         </section>
         

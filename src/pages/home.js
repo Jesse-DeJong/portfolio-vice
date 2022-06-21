@@ -2,32 +2,52 @@ import '../styles/reset.css';
 import '../styles/style.css';
 import Nav from '../components/nav';
 import Landing from '../components/landing'; 
+import Projects from './projects';
+import { useState } from 'react';
 
 const Home = () => {
-    const windowHeight = document.documentElement.clientHeight;
-    const windowWidth = document.documentElement.clientWidth;
-    const leftWidth = windowWidth / 4;
-    const rightWidth = (windowWidth / 4) * 3;
+    const initializeWindow = {
+        windowHeight: document.documentElement.clientHeight,
+        windowWidth: document.documentElement.clientWidth,
+        leftWidth: document.documentElement.clientWidth / 4,
+        rightWidth: (document.documentElement.clientWidth / 4) * 3
+    };
+
+    const [windowSize, setWindowSize] = useState(initializeWindow);
+    const [count, setCount] = useState(0);
+
+    // hook to trigger state update on window re-size
 
     const styles = {
         window: {
             display: "flex",
-            height: windowHeight
+            height: windowSize.windowHeight
         },
         left: {
-            width: leftWidth,
+            width: windowSize.leftWidth,
             border: "1px solid white"
         },
         right: {
-            width: rightWidth,
+            width: windowSize.rightWidth,
             border: "1px solid white"
         }
     }
 
     return (
         <section style={styles.window}>
-            <section style={styles.left}><Nav /></section>
-            <section style={styles.right}><Landing /></section>
+            <section style={styles.left}><Nav setCount={setCount}/></section>
+            <section style={styles.right}>
+                {count == 0 ?
+                <>
+                    <Landing />
+                </>
+                : count == 1 ?
+                <>
+                    <Projects />
+                </>
+                : <p>Whoops! Something went wrong. {console.log(count)}</p>
+                }
+            </section>
         </section>
     )
 }
