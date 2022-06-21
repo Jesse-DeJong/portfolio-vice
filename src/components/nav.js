@@ -16,6 +16,7 @@ const Nav = ({
             alignItems: "center",
         },
         listItem: {
+            cursor: "pointer",
             margin: "10px 0px"
         }
     }

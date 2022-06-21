@@ -4,6 +4,7 @@ import Nav from '../components/nav';
 import Landing from '../components/landing'; 
 import Projects from './projects';
 import { useState } from 'react';
+import Contact from './contact';
 
 const Home = () => {
     const initializeWindow = {
@@ -44,6 +45,10 @@ const Home = () => {
                 : count == 1 ?
                 <>
                     <Projects setCount={setCount}/>
+                </>
+                : count == 2 ?
+                <>
+                    <Contact />
                 </>
                 : <p>Whoops! Something went wrong. {console.log(count)}</p>
                 }
