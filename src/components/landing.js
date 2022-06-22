@@ -1,3 +1,6 @@
+import '../styles/reset.css';
+import '../styles/style.css';
+
 const Landing = () => {
 
     return (

@@ -328,6 +328,7 @@ $skillWidth: 300px;
     align-items: center;
     margin-top: 5%;
     font-size: 30px;
+
     &__heading {
         font-family: $heading;
     }
@@ -336,12 +337,29 @@ $skillWidth: 300px;
         font-family: $script;
     }
 
-
-    &__link {
-        padding: 10px 10px; /* Y X */
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    &__listItem {
+        cursor: pointer;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    &__listItem:hover {
+        background: grey;
+    }
+
+
 
     @media only screen and (min-width: $desktop) {
 
     }
 }
+
+// .active {
+//     background-color: red;
+// }

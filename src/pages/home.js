@@ -36,7 +36,14 @@ const Home = () => {
 
     return (
         <section style={styles.window}>
-            <section style={styles.left}><Nav setCount={setCount}/></section>
+            
+            <section style={styles.left}>
+                <Nav 
+                    setCount={setCount}
+                    window={windowSize}
+                />
+            </section>
+            
             <section style={styles.right}>
                 {count == 0 ?
                     <>
