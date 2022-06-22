@@ -39,17 +39,17 @@ const Home = () => {
             <section style={styles.left}><Nav setCount={setCount}/></section>
             <section style={styles.right}>
                 {count == 0 ?
-                <>
-                    <Landing />
-                </>
+                    <>
+                        <Landing />
+                    </>
                 : count == 1 ?
-                <>
-                    <Projects setCount={setCount}/>
-                </>
+                    <>
+                        <Projects setCount={setCount}/>
+                    </>
                 : count == 2 ?
-                <>
-                    <Contact />
-                </>
+                    <>
+                        <Contact />
+                    </>
                 : <p>Whoops! Something went wrong. {console.log(count)}</p>
                 }
             </section>

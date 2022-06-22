@@ -13,6 +13,8 @@ const Projects = ({setCount}) => {
                     description={project.description}
                     repo={project.repo}
                     live={project.live}
+                    tech={project.tech}
+
                     setCount={setCount}
                     projectNumber={index}
                     key={index}
