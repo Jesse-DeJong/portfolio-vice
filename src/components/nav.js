@@ -23,7 +23,10 @@ const Nav = ({
 
     return (
         <section style={styles.body}>
-            <h1>Jesse De Jong</h1>
+            <section className="nav">
+                <h1 className="nav__heading">Jesse DE Jong</h1>
+                <p className="nav__script">web <a href="https://github.com/Jesse-DeJong" target="_target" alt="github link" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a> dev</p>
+            </section>
             <ul style={styles.list}>
                 <li style={styles.listItem} id="0" onClick={handleClick}>About Me</li>
                 <li style={styles.listItem} id="1" onClick={handleClick}>Projects</li>

@@ -230,7 +230,16 @@ body {
 /* Nav */
 .nav {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  font-size: 30px;
+}
+.nav__heading {
+  font-family: "Megrim", cursive;
+}
+.nav__script {
+  font-family: "Big Shoulders Inline Display", cursive;
 }
 .nav__link {
   padding: 10px 10px;

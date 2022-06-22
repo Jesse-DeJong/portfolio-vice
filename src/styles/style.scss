@@ -324,7 +324,18 @@ $skillWidth: 300px;
 
 .nav {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    font-size: 30px;
+    &__heading {
+        font-family: $heading;
+    }
+    
+    &__script {
+        font-family: $script;
+    }
+
 
     &__link {
         padding: 10px 10px; /* Y X */

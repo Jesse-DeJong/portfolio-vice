@@ -8,7 +8,7 @@ const Contact = () => {
 
     const [toSend, setToSend] = useState({
         from_name: '',
-        to_name: '',
+        to_name: 'Jesse',
         message: '',
         reply_to: '',
     });
