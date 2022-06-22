@@ -57,7 +57,13 @@ const ProjectCard = ({
                         <section>
                             <h5>{title}</h5>
                             <p>{description}</p>
-                            <p>ul icons of technologies used</p>
+                            <ul>
+                                {tech.map((tech, index) => (
+                                    <li key={index}>
+                                        <i className={icons[tech]}></i>
+                                    </li>
+                                ))}
+                            </ul>
                         </section>
                     </section>
                 </>
