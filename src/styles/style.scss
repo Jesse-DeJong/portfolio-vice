@@ -13,7 +13,7 @@ $desktop: 901px;
 /* Components */
 @mixin flexCenter {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -35,7 +35,8 @@ body {
     font-size: 20px;
     @include flexCenter;
     flex-direction: column;
-    padding: 20px;
+    padding: 50px;
+    height: 80%;
     
     &__heading {
         font-family: $heading;
@@ -353,8 +354,6 @@ $skillWidth: 300px;
     &__listItem:hover {
         background: grey;
     }
-
-
 
     @media only screen and (min-width: $desktop) {
 

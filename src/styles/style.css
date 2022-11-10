@@ -17,10 +17,11 @@ body {
 .landing {
   font-size: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 50px;
+  height: 80%;
 }
 .landing__heading {
   font-family: "Megrim", cursive;
