@@ -32,9 +32,10 @@ body {
 /* Landing Page */
 
 .landing {
-    font-size: 50px;
+    font-size: 20px;
     @include flexCenter;
     flex-direction: column;
+    padding: 20px;
     
     &__heading {
         font-family: $heading;
@@ -345,8 +346,8 @@ $skillWidth: 300px;
 
     &__listItem {
         cursor: pointer;
-        width: 100%;
-        padding: 10px 0;
+        width: 98%;
+        padding: 10px 0 10px 10px;
     }
 
     &__listItem:hover {

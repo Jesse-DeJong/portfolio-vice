@@ -47,7 +47,7 @@ const Home = () => {
             <section style={styles.right}>
                 {count == 0 ?
                     <>
-                        <Landing />
+                        <Landing windowHeight={windowSize.windowHeight}/>
                     </>
                 : count == 1 ?
                     <>

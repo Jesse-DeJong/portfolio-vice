@@ -15,11 +15,12 @@ body {
 
 /* Landing Page */
 .landing {
-  font-size: 50px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 }
 .landing__heading {
   font-family: "Megrim", cursive;
@@ -248,9 +249,11 @@ body {
 }
 .nav__listItem {
   cursor: pointer;
-  width: 100%;
-  padding: 10px 0;
+  width: 98%;
+  padding: 10px 0 10px 10px;
 }
 .nav__listItem:hover {
   background: grey;
 }
+
+/*# sourceMappingURL=style.css.map */
